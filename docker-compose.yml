@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: csd214-lab4-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: csd214_lab4
+      MYSQL_USER: lab4user
+      MYSQL_PASSWORD: lab4pass
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./volumes/mysql-data:/var/lib/mysql
