@@ -1,4 +1,4 @@
-package ca.saultcollege.csd214.csd214_f25_lab4_exercise_thiagosilva;
+package lab4;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
